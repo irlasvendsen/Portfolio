@@ -1,0 +1,50 @@
+ul#menu {
+  	list-style: none;
+    position: relative;
+  }
+  ul#menu li{
+      position: relative;
+  }
+
+  ul#projects {
+    	list-style: none;
+      position: relative;
+    }
+    ul#projects li{
+        position: relative;
+      display: inline-block;
+    }
+
+.project1 {
+  grid-area: project1;
+}
+.project2 {
+  grid-area: project2;
+}
+.project3 {
+  grid-area: project3;
+}
+.projects {
+  grid-area: projects;
+}
+.container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 100px auto 40px;
+  grid-template-areas:
+   "navbar header header header"
+   "navbar projects projects projects"
+   "footer footer footer footer";
+}
+
+.header{
+  grid-area: header;
+
+}
+.navbar{
+  grid-area: navbar;
+}
+
+.footer{
+  grid-area: footer;
+}
